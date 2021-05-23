@@ -1,0 +1,10 @@
+to install venv use: 
+    py -m venv .venv
+
+    
+to start venv use:
+    .venv\Scripts\activate
+
+
+How to intall packages
+    py -m pip install oura
