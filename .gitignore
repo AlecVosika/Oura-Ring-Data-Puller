@@ -140,4 +140,5 @@ cython_debug/
 
 
 config.ini
+/data.txt
 data.txt/

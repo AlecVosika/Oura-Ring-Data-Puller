@@ -10,6 +10,16 @@ This application uses a virtual environment for python packages.
 
 ## Setup
 
+### Virtual Enviroment Setup
+
+1. Open the project directory in cmd and then run the following:
+
+```CMD
+py -m venv .venv
+.venv\Scripts\activate
+py -m pip install -r requirements.txt
+```
+
 ### Config.ini Setup
 
 Create a config.ini file in the src folder and copy the following into the file.
