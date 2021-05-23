@@ -17,6 +17,7 @@ This application uses a virtual environment for python packages.
 ```CMD
 py -m venv .venv
 .venv\Scripts\activate
+.venv\Scripts\python.exe  -m pip install --upgrade pip
 py -m pip install -r requirements.txt
 ```
 
