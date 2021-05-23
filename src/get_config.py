@@ -2,6 +2,12 @@ from configparser import ConfigParser
 
 
 def GetClientId():
+    """
+    Function used by main.py to get the Client ID from the config.ini file
+
+    Returns:
+        client_ID: The client ID used to get data 
+    """
     # instantiate
     config = ConfigParser()
 
@@ -15,6 +21,12 @@ def GetClientId():
 
 
 def GetAccessToken():
+    """
+    Function used by main.py to get the Access Token from the config.ini file
+
+    Returns:
+        access_token: The Access Token used to get data 
+    """
     # instantiate
     config = ConfigParser()
 

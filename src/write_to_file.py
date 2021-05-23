@@ -1,7 +1,7 @@
 
 def WriteToFile(info):
     """
-    Writes data for args
+    Writes data to src/data.txt file for args
 
     Args:
         info : A list containing a dictionary
