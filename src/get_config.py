@@ -1,39 +1,41 @@
 from configparser import ConfigParser
 
 
-def GetClientId():
+class GetconfigData:
     """
-    Function used by main.py to get the Client ID from the config.ini file
-
-    Returns:
-        client_ID: The client ID used to get data 
+    Class used to access config.ini data
     """
-    # instantiate
-    config = ConfigParser()
 
-    # parse existing file
-    config.read('config.ini')
+    def __init__(self):
+        # instantiate
+        self.config = ConfigParser()
+        # parse existing file
+        self.config.read('config.ini')
 
-    # read values from a section
-    client_id = config.get('config', 'client_id')
+    def GetClientId():
+        """
+        Function used by main.py to get the Client ID from the config.ini file
 
-    return client_id
+        Returns:
+            client_ID: The client ID used to get data 
+        """
+        # Create object
+        get_client_id = GetconfigData()
+        # read values from a section
+        client_id = get_client_id.config.get('config', 'client_id')
 
+        return client_id
 
-def GetAccessToken():
-    """
-    Function used by main.py to get the Access Token from the config.ini file
+    def GetAccessToken():
+        """
+        Function used by main.py to get the Access Token from the config.ini file
 
-    Returns:
-        access_token: The Access Token used to get data 
-    """
-    # instantiate
-    config = ConfigParser()
+        Returns:
+            access_token: The Access Token used to get data 
+        """
+        # Create object
+        get_access_token = GetconfigData()
+        # read values from a section
+        access_token = get_access_token.config.get('config', 'access_token')
 
-    # parse existing file
-    config.read('config.ini')
-
-    # read values from a section
-    access_token = config.get('config', 'access_token')
-
-    return access_token
+        return access_token
