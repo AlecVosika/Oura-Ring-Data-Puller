@@ -23,7 +23,7 @@ py -m pip install -r requirements.txt
 
 ### Config.ini Setup
 
-Create a config.ini file in the src folder and copy the following into the file.
+Create a config.ini file in the project root directory and copy the following into the file.
 
 ```Python
 [config]
